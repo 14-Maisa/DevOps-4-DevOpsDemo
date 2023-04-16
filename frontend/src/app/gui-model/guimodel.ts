@@ -3,7 +3,7 @@ export class GuiModel {
 
     private _guiModel = {
         "application": {
-            "title": "DevOpsDemo FS2023",
+            "title": "Maisa ihre Todo-Liste",
             "formList": [
                 {
                     "id": "OwnUserForm",
@@ -74,6 +74,13 @@ export class GuiModel {
                             "width": 2
                         },
                         {
+                            "id": "bis wann",
+                            "type": "date",
+                            "name": { default: "bis wann erledigen" },
+                            "newRow": true,
+                            "width": 2
+                        },
+                        {
                             "type": "deleteButton",
                             "name": "Delete"
                         },
@@ -107,6 +114,15 @@ export class GuiModel {
                             "width": 2,
                             "newRow": true,
                         },
+                        {
+                            "type": "button",
+                            "name": { default: "Prio-ToDos" },
+                            "icon": "fa-solid fa-star",
+                            "color": "alizarin",
+                            "page": "toDoPage",
+                            "width": 4,
+                            "newRow": true,
+                        },
                     ]
                 },
                 {
@@ -135,7 +151,17 @@ export class GuiModel {
                             "form": {
                                 "form": "ToDoForm"
                             }
-                        }
+                        },
+                        {
+                            "type": "newButton",
+                            "name": { default: "Meine Neue Page"},
+                            "icon": "fa-solid fa-face-smile",
+                            "color": "magenta",
+                            "width": 4,
+                            "form" : {
+                                "form" : "ToDoForm"
+                            }
+                        },
                     ]
                 },
             ]
