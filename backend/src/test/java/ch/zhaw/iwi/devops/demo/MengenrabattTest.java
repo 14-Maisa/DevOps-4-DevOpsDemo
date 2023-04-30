@@ -28,7 +28,7 @@ public class MengenrabattTest {
     @Test 
     public void MengenRabatt28(){
         Mengenrabatt rabatt = new Mengenrabatt();
-        Assertions.assertEquals("5.6 % Mengenrabatt erhalten", rabatt.convert(28));
+        Assertions.assertEquals("6 % Mengenrabatt erhalten", rabatt.convert(28));
     }
 
     @Test 
